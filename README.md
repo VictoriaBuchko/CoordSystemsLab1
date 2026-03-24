@@ -47,12 +47,29 @@
 - у класі CartesianPoint2D реалізовано метод fromPolar(PolarPoint p)
 - у класі PolarPoint реалізовано метод fromCartesian(CartesianPoint2D p)
 
-![Методи 2D](img5.png)  
-Рисунок 5 – Методи fromCartesian та fromPolar
+![fromPolar](images/img5.png)  
+Рисунок 5 – Метод fromPolar у класі CartesianPoint2D
+
+![fromCartesian](images/img6.png)  
+Рисунок 6 – Метод fromCartesian у класі PolarPoint
 
 Для тривимірного простору (3D):
 - у класі CartesianPoint3D реалізовано метод fromSpherical(SphericalPoint p)
 - у класі SphericalPoint реалізовано метод fromCartesian(CartesianPoint3D p)
 
-![Методи 3D](img6.png)  
-Рисунок 6 – Методи fromSpherical та fromCartesian (3D)
+![fromSpherical](images/img7.png)  
+Рисунок 7 – Метод fromSpherical у класі CartesianPoint3D
+
+![fromCartesian3D](images/img8.png)  
+Рисунок 8 – Метод fromCartesian у класі SphericalPoint
+
+
+3. Перевірка: Створіть кілька тестових точок, виконайте пряме та зворотне перетворення і переконайтесь, що початкові координати збігаються з кінцевими (з урахуванням похибки обчислень для чисел з плаваючою комою).
+
+Оскільки обчислення виконуються з використанням чисел з плаваючою комою, для порівняння координат використовується мала похибка (Eps = 1e-9). Значення вважаються рівними, якщо їх різниця менша за задану похибку.
+Результати перевірки виводяться у консоль у вигляді повідомлень «Збігаються» або «Не збігаються» для кожної координати.
+
+![Перевірка перетворень](images/img9.png)  
+Рисунок 9 – Перевірка коректності прямих та зворотних перетворень у 2D та 3D системах координат
+
+
