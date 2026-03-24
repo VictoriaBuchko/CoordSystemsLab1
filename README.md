@@ -12,6 +12,8 @@
 - Будь-яке середовище розробки (Visual Studio / VS Code...)
 
 
+
+
 1. Проектування та реалізація імутабельних моделей даних
 Необхідно спроектувати та реалізувати імутабельні (immutable) класи або структури для представлення точок. Після створення об'єкта його стан (координати) не повинен змінюватися.
 
@@ -21,18 +23,36 @@
 - CartesianPoint3D(x, y, z)
 - SphericalPoint(radius, azimuth, polarAngle) (де radius - радіус-вектор , azimuth - азимутальний кут , polarAngle - полярний кут )
 
-![CartesianPoint2D](images/img1.png)  
+![CartesianPoint2D](img1.png)  
 
 Рисунок 1 – CartesianPoint2D(x, y)
 
-![PolarPoint](images/img2.png)  
+![PolarPoint](img2.png)  
 
 Рисунок 2 – PolarPoint(radius, angle)
 
-![CartesianPoint3D](images/img3.png)  
+![CartesianPoint3D](img3.png)  
 
 Рисунок 3 – CartesianPoint3D(x, y, z)
 
-![SphericalPoint](images/img4.png)  
+![SphericalPoint](img4.png)  
 
 Рисунок 4 – SphericalPoint(radius, azimuth, polarAngle)
+
+
+
+2. Реалізовано статичні фабричні методи для перетворення між системами координат.
+
+Для двовимірного простору (2D):
+- у класі CartesianPoint2D реалізовано метод fromPolar(PolarPoint p)
+- у класі PolarPoint реалізовано метод fromCartesian(CartesianPoint2D p)
+
+![Методи 2D](img5.png)  
+Рисунок 5 – Методи fromCartesian та fromPolar
+
+Для тривимірного простору (3D):
+- у класі CartesianPoint3D реалізовано метод fromSpherical(SphericalPoint p)
+- у класі SphericalPoint реалізовано метод fromCartesian(CartesianPoint3D p)
+
+![Методи 3D](img6.png)  
+Рисунок 6 – Методи fromSpherical та fromCartesian (3D)
