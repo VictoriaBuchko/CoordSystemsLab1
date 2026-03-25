@@ -1,0 +1,14 @@
+C:\Users\SunValley\Desktop\CoordSystemsLab1\bin\Debug\net8.0\CoordSystemsLab1.exe
+C:\Users\SunValley\Desktop\CoordSystemsLab1\bin\Debug\net8.0\CoordSystemsLab1.deps.json
+C:\Users\SunValley\Desktop\CoordSystemsLab1\bin\Debug\net8.0\CoordSystemsLab1.runtimeconfig.json
+C:\Users\SunValley\Desktop\CoordSystemsLab1\bin\Debug\net8.0\CoordSystemsLab1.dll
+C:\Users\SunValley\Desktop\CoordSystemsLab1\bin\Debug\net8.0\CoordSystemsLab1.pdb
+C:\Users\SunValley\Desktop\CoordSystemsLab1\obj\Debug\net8.0\CoordSystemsLab1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SunValley\Desktop\CoordSystemsLab1\obj\Debug\net8.0\CoordSystemsLab1.AssemblyInfoInputs.cache
+C:\Users\SunValley\Desktop\CoordSystemsLab1\obj\Debug\net8.0\CoordSystemsLab1.AssemblyInfo.cs
+C:\Users\SunValley\Desktop\CoordSystemsLab1\obj\Debug\net8.0\CoordSystemsLab1.csproj.CoreCompileInputs.cache
+C:\Users\SunValley\Desktop\CoordSystemsLab1\obj\Debug\net8.0\CoordSystemsLab1.dll
+C:\Users\SunValley\Desktop\CoordSystemsLab1\obj\Debug\net8.0\refint\CoordSystemsLab1.dll
+C:\Users\SunValley\Desktop\CoordSystemsLab1\obj\Debug\net8.0\CoordSystemsLab1.pdb
+C:\Users\SunValley\Desktop\CoordSystemsLab1\obj\Debug\net8.0\CoordSystemsLab1.genruntimeconfig.cache
+C:\Users\SunValley\Desktop\CoordSystemsLab1\obj\Debug\net8.0\ref\CoordSystemsLab1.dll
