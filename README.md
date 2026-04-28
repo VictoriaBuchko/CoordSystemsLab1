@@ -44,16 +44,16 @@
 - CartesianPoint3D(x, y, z)
 - SphericalPoint(radius, azimuth, polarAngle) (де radius - радіус-вектор , azimuth - азимутальний кут , polarAngle - полярний кут )
 
-![CartesianPoint2D](img1.png)  
+![CartesianPoint2D](images/img1.png)  
 Рисунок 1 – CartesianPoint2D(x, y)
 
-![PolarPoint](img2.png)  
+![PolarPoint](images/img2.png)  
 Рисунок 2 – PolarPoint(radius, angle)
 
-![CartesianPoint3D](img3.png)  
+![CartesianPoint3D](images/img3.png)  
 Рисунок 3 – CartesianPoint3D(x, y, z)
 
-![SphericalPoint](img4.png)  
+![SphericalPoint](images/img4.png)  
 Рисунок 4 – SphericalPoint(radius, azimuth, polarAngle)
 
 ## 2. Реалізовано статичні фабричні методи для перетворення між системами координат
@@ -61,20 +61,20 @@
 - у класі CartesianPoint2D реалізовано метод fromPolar(PolarPoint p)
 - у класі PolarPoint реалізовано метод fromCartesian(CartesianPoint2D p)
 
-![fromPolar](img5.png)  
+![fromPolar](images/img5.png)  
 Рисунок 5 – Метод fromPolar у класі CartesianPoint2D
 
-![fromCartesian](img6.png)  
+![fromCartesian](images/img6.png)  
 Рисунок 6 – Метод fromCartesian у класі PolarPoint
 
 Для тривимірного простору (3D):
 - у класі CartesianPoint3D реалізовано метод fromSpherical(SphericalPoint p)
 - у класі SphericalPoint реалізовано метод fromCartesian(CartesianPoint3D p)
 
-![fromSpherical](img7.png)  
+![fromSpherical](images/img7.png)  
 Рисунок 7 – Метод fromSpherical у класі CartesianPoint3D
 
-![fromCartesian3D](img8.png)  
+![fromCartesian3D](images/img8.png)  
 Рисунок 8 – Метод fromCartesian у класі SphericalPoint
 
 ## Перевірка коректності перетворень
@@ -82,10 +82,10 @@
 
 Результати перевірки виводяться у консоль у вигляді повідомлень «Збігаються» або «Не збігаються» для кожної координати.
 
-![Перевірка перетворень](img9.png)  
+![Перевірка перетворень](images/img9.png)  
 Рисунок 9 – Перевірка коректності прямих та зворотних перетворень у 2D та 3D системах координат
 
-![Перевірка перетворень](img20.png)  
+![Перевірка перетворень](images/img20.png)  
 Рисунок 10 – Перевірка коректності прямих та зворотних перетворень у 2D та 3D системах координат (результати)
 
 ## Реалізація обчислення відстаней
@@ -98,7 +98,7 @@
 - Метод Euclidean(CartesianPoint2D a, CartesianPoint2D b) обчислює евклідову відстань між двома точками у декартовій системі координат за стандартною формулою відстані.
 - Метод Polar(PolarPoint a, PolarPoint b) обчислює відстань між точками безпосередньо у полярній системі координат, використовуючи теорему косинусів. Це дозволяє уникнути попереднього перетворення у декартову систему.
 
-![Відстані 2D](img10.png)  
+![Відстані 2D](images/img10.png)  
 Рисунок 11 – Реалізація методів обчислення відстаней у 2D просторі
 
 ### Відстань у 3D-просторі
@@ -121,10 +121,10 @@
 - обчислено пряму відстань (хорду) між точками у сферичній системі координат
 - обчислено дугову відстань по поверхні сфери
 
-![Код обчислення відстаней](img12.png)  
+![Код обчислення відстаней](images/img12.png)  
 Рисунок 13 – Код перевірки обчислення відстаней у 2D та 3D просторах
 
-![Результат виконання](img13.png)  
+![Результат виконання](images/img13.png)  
 Рисунок 14 – Результат виконання програми (вивід у консоль)
 
 ## 3. Аналіз продуктивності (Бенчмаркінг)
@@ -147,14 +147,14 @@
 
 
 **2D частина бенчмаркінгу**  
-![Код бенчмаркінгу 2D](img14.png)  
+![Код бенчмаркінгу 2D](images/img14.png)  
 Рисунок 15 – Код реалізації бенчмаркінгу (2D частина)
 
 **3D частина бенчмаркінгу**  
-![Код бенчмаркінгу 3D](img21.png)  
+![Код бенчмаркінгу 3D](images/img21.png)  
 Рисунок 16 – Код реалізації бенчмаркінгу (3D частина)
 
-![Результати бенчмаркінгу](img15.png)  
+![Результати бенчмаркінгу](images/img15.png)  
 Рисунок 17 – Результати вимірювання продуктивності (консольний вивід)
 
 
